@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply border-slate-200; }
+  body { @apply m-0 bg-paper text-ink antialiased; }
+  input, textarea, select { @apply outline-none; }
+}
+
+@layer components {
+  .card { @apply rounded-3xl border border-white/80 bg-white p-6 shadow-soft; }
+  .btn-primary { @apply inline-flex items-center justify-center rounded-xl bg-ink px-5 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-secondary { @apply inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white font-semibold text-ink transition hover:border-slate-300 hover:bg-slate-50; }
+  .field { @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm placeholder:text-slate-400 focus:border-accent focus:ring-4 focus:ring-accent/10; }
+  .label { @apply mb-2 block text-sm font-semibold text-slate-700; }
+  .eyebrow { @apply text-xs font-bold uppercase tracking-[0.2em] text-accent; }
+  .status { @apply inline-flex rounded-full px-2.5 py-1 text-xs font-bold; }
+  .status-pending { @apply bg-amber-100 text-amber-800; }
+  .status-in_progress { @apply bg-blue-100 text-blue-800; }
+  .status-done { @apply bg-emerald-100 text-emerald-800; }
+}
+
+::selection { background: #d8d4ff; color: #172133; }

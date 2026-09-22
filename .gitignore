@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+framework.sqlite3
+
+# Node / Next
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# Local configuration
+.env
+.env.local
+*.log
+
+# Editors and OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
